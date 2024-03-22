@@ -1,0 +1,58 @@
+@import 'Colors';
+.advantages{
+    background-color: $backgroundWhiteBlockColor;
+    color: $onLightTextColor;
+    &__content{
+        padding: 3.75rem 7rem;
+        position: relative;
+        h1{
+            margin: 0;
+            margin-left: 0.625rem;
+            margin-bottom: 2.5rem;
+            font-size: 1.5em;
+            font-family: 'Century Gothic';
+            font-weight: bold;
+            letter-spacing: 0.15em;
+        }
+    }
+    &__grid-container{ 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem; 
+        justify-content: center;
+    }
+
+    &__item{
+        grid-column: span 4;
+    }
+    
+    &__pepper{
+        position: absolute;
+        top: 0%;
+        left: 50%;
+    }
+
+    &__shashlik{
+        position: absolute;
+        top: 15.8%;
+        left: 0;
+    }
+
+    &__ribs{
+        position: absolute;
+        top: 0;
+        right: 4.2%;
+    }
+
+    &__tomato{
+        position: absolute;
+        right: 0;
+        top: 63%;
+    }
+
+    &__steak{
+        position: absolute;
+        bottom: 0;
+        left: 70%;
+    }
+}

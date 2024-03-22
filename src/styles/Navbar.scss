@@ -1,0 +1,67 @@
+@import 'Colors';
+
+.navigation-bar {
+    background-color: $headerBackgroundColor;
+    z-index: 2;
+    color: $defaultTextColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    letter-spacing: 0.15em;
+    position: fixed;
+    width: 100%;
+    padding: 0.9375rem 7.78% 0.9375rem 3.26%;
+    
+    &__navigation-buttons{
+        display: flex;
+    }
+
+    &__logo {
+        margin-right: 30px;
+        max-height: 65px;
+    }
+    
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    
+
+    &__navigation-list {
+    list-style-type: none;
+    font-family: "Century Gothic";
+    font-weight: normal;
+    display: flex;
+    }
+    
+    &__navigation-item{
+        padding: 5px 20px; 
+        & a {  
+            text-decoration: none;
+            color: $headerTextColor;
+        }
+        & a:hover,
+        & a:focus {
+            color: $highlightedItemColor; 
+        }
+    }
+
+    &__interact-buttons{
+        display: flex;
+        & > :first-child{
+            margin-right: 4.0625rem;
+        }
+    }
+
+    &__interact-button{
+        display: flex;
+        align-items: center;
+        & span{
+            margin-left: 0.375rem;
+            margin-right: 0.5rem;
+        }
+    }
+    
+
+
+}

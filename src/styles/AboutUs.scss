@@ -1,0 +1,83 @@
+@import 'Colors';
+
+.about-us {
+    padding: 3.75rem 7rem;
+    color: $defaultTextColor;
+  
+    h1 {
+      margin: 0;
+      font-family: 'Inter';
+      font-size: 2rem;
+      color: $highlightedItemColor;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+    }
+ 
+    &__grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        gap: 2rem; 
+        justify-content: center;
+    }
+    
+
+    &__main-picture-container {
+        grid-column: span 4;
+        align-self: center;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }  
+
+    &__picture-container {
+        grid-column: span 3/-1;
+        align-self: center;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: span 8; 
+        overflow: hidden;
+        word-wrap: break-word; 
+      h2 {
+        margin: 0;
+        font-family: 'Inter';
+        color: $defaultTextColor;
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        margin-bottom: 2rem;
+      }
+      span {
+        font-family: 'Inter';
+        color: $defaultTextColor;
+        font-size: 1em;
+        letter-spacing: 0.15em;
+        font-weight: 300;
+      }
+      .highlighted-span {
+        font-weight: 400;
+      }
+      .highlighted-header {
+        color: $highlightedItemColor;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+      }
+    }
+
+    &__text-changed{
+        grid-column: span 8/-1; 
+    }
+    
+    &__picture-changed{
+        grid-column: span 3; 
+    }
+  }
+  
