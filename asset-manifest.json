@@ -1,16 +1,39 @@
 {
   "files": {
-    "main.css": "/ShashlikMaster/static/css/main.f855e6bc.css",
-    "main.js": "/ShashlikMaster/static/js/main.ac4adbba.js",
+    "main.css": "/ShashlikMaster/static/css/main.7fe7ba0d.css",
+    "main.js": "/ShashlikMaster/static/js/main.4c92e0e8.js",
     "static/js/453.5fada6e6.chunk.js": "/ShashlikMaster/static/js/453.5fada6e6.chunk.js",
-    "static/media/logo.svg": "/ShashlikMaster/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/brown-wooden-textured-flooring-background.jpg": "/ShashlikMaster/static/media/brown-wooden-textured-flooring-background.299aeceb99bc5eedda8f.jpg",
+    "static/media/Logo.svg": "/ShashlikMaster/static/media/Logo.37d8c1abfb6cdfa53c528692d84a203b.svg",
+    "static/media/ProductRightImage.png": "/ShashlikMaster/static/media/ProductRightImage.134c74c81920bd1f9ad4.png",
+    "static/media/Shashlik_master.png": "/ShashlikMaster/static/media/Shashlik_master.140e0a42ef6e2522ba28.png",
+    "static/media/About_meat.png": "/ShashlikMaster/static/media/About_meat.c8d56301eedac1da1298.png",
+    "static/media/Thermal Box.png": "/ShashlikMaster/static/media/Thermal Box.c2f8ff227d97765a829e.png",
+    "static/media/Affordable_price.png": "/ShashlikMaster/static/media/Affordable_price.245874cdc90f18b1279d.png",
+    "static/media/centurygothic_bold.woff2": "/ShashlikMaster/static/media/centurygothic_bold.52df14bc795150efb832.woff2",
+    "static/media/centurygothic.woff2": "/ShashlikMaster/static/media/centurygothic.9ceea974757b875c4786.woff2",
+    "static/media/shashlik.svg": "/ShashlikMaster/static/media/shashlik.f74fbce950e4ae304608e84d1417a5ea.svg",
+    "static/media/tomato.svg": "/ShashlikMaster/static/media/tomato.40a9a8302105aba03bf82a61f9b934a0.svg",
+    "static/media/steak.svg": "/ShashlikMaster/static/media/steak.7ccd63ef13ae0099079ac6ac9ed5249a.svg",
+    "static/media/chili-pepper.svg": "/ShashlikMaster/static/media/chili-pepper.2fc8609ce70d3cc219820a30f1c03e96.svg",
+    "static/media/ribs.svg": "/ShashlikMaster/static/media/ribs.194c048a309a66ab73d98a6be4604b46.svg",
+    "static/media/skewer.svg": "/ShashlikMaster/static/media/skewer.a16ee5ea23657eeaa917fd3a705ceebc.svg",
+    "static/media/delivery-time.svg": "/ShashlikMaster/static/media/delivery-time.a528b6a2c0888f7d527c00ba3036e4ee.svg",
+    "static/media/good-review.svg": "/ShashlikMaster/static/media/good-review.cda046ea941d51057cefe68675a79566.svg",
+    "static/media/New client.svg": "/ShashlikMaster/static/media/New client.1976f7bdc2542662b9f2f4db30c43d51.svg",
+    "static/media/contact phone.svg": "/ShashlikMaster/static/media/contact phone.c956c8e911897aa8a33eaf98e60fc63d.svg",
+    "static/media/rating.svg": "/ShashlikMaster/static/media/rating.78599d28fe24466126fc3c6b1c47fabe.svg",
+    "static/media/Cart.svg": "/ShashlikMaster/static/media/Cart.6c4efc433ff5016b94290aefe11f1fc2.svg",
     "index.html": "/ShashlikMaster/index.html",
-    "main.f855e6bc.css.map": "/ShashlikMaster/static/css/main.f855e6bc.css.map",
-    "main.ac4adbba.js.map": "/ShashlikMaster/static/js/main.ac4adbba.js.map",
+    "static/media/arrow-down.svg": "/ShashlikMaster/static/media/arrow-down.a54edbca5cc7c22f2cc152eb53f84411.svg",
+    "static/media/skewer-start.svg": "/ShashlikMaster/static/media/skewer-start.789f89add15282072b9ebbc6234653d4.svg",
+    "static/media/end-skewer.svg": "/ShashlikMaster/static/media/end-skewer.29890e60abf45c620495822565964777.svg",
+    "main.7fe7ba0d.css.map": "/ShashlikMaster/static/css/main.7fe7ba0d.css.map",
+    "main.4c92e0e8.js.map": "/ShashlikMaster/static/js/main.4c92e0e8.js.map",
     "453.5fada6e6.chunk.js.map": "/ShashlikMaster/static/js/453.5fada6e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.ac4adbba.js"
+    "static/css/main.7fe7ba0d.css",
+    "static/js/main.4c92e0e8.js"
   ]
 }
