@@ -1,7 +1,20 @@
 @import 'Colors';
 
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition: opacity 1s ease, transform 1s ease;
+}
 .navigation-bar {
     background-color: $headerBackgroundColor;
+    backdrop-filter: blur(5px);
     z-index: 2;
     color: $defaultTextColor;
     display: flex;
@@ -37,11 +50,11 @@
     &__navigation-item{
         padding: 5px 20px; 
         & a {  
-            text-decoration: none;
             color: $headerTextColor;
         }
         & a:hover,
         & a:focus {
+            cursor: pointer;
             color: $highlightedItemColor; 
         }
     }

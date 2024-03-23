@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll';
 import '../../styles/AboutUs.scss'
 import ShashlikMaster from "../../assets/images/About/Shashlik_master.png"
 import AboutProduct from "../../assets/images/About/About_meat.png"
@@ -26,7 +27,7 @@ const aboutItems = [
 
 function AboutUs() {
     return (
-      <div className='about-us'>
+      <Element name="about-us" className='about-us'>
         <h1>
           <span style={{ borderBottom: '3px solid #a63d40' }}>ПР</span>О НАС
         </h1>
@@ -42,14 +43,13 @@ function AboutUs() {
           {aboutItems.map((item, index) => (
             <AboutUsItem
               index={index}
-            //   className="about-us__item"
               header={item.header}
               text={item.text}
               imageSrc={item.imageSrc}
             />
           ))}
         </div>
-      </div>
+      </Element>
     );
   }
   

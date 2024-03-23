@@ -1,0 +1,127 @@
+@import 'Colors';
+
+.reviews{
+    position: relative;
+    padding: 3.75rem 7rem;
+    color: $onLightTextColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backgroundWhiteBlockColor;
+    
+    h1{
+      margin-top: 0;
+      margin-bottom: 2.5rem;
+      font-family: 'Century Gothic';
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 0.15em;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__card{
+        grid-column: span 4;
+        padding: 1rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        &.reviews__current {
+            padding: 1rem 4.5rem; 
+        }
+    }
+    
+
+    &__comment-content{
+        display: flex;
+        margin: 1.5625rem 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Century Gothic';
+        text-align: center;
+        h2{
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+            letter-spacing: 0.1em;
+            word-wrap: break-word; 
+            overflow-wrap: break-word;
+        }
+        .reviews__card.reviews__current & {
+            margin: 2.5rem 0;
+            h2{
+                margin-bottom: 1rem;
+            }
+        }
+        span {
+            // word-break: break-all; 
+            word-wrap: break-word; 
+            overflow-wrap: break-word;
+        }
+    }
+    
+    &__slide-controller{
+        width: 60px;
+        height: 60px;
+    }
+
+    &__user-pic{
+        width: 4.125rem;
+        height: 4.125rem;
+        margin-bottom: 0.3125rem;
+        .reviews__card.reviews__current & {
+            width: 5rem;
+            height: 5rem;
+          }
+    }
+     
+    &__current{
+        background-color: $reviewCardBackground;
+        border-radius: 20px;
+        border: 1px solid $onLightBorderColor;
+    }
+
+    &__next-slide{
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+    }
+
+    &__previous-slide{
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+    }
+
+    .reviews__not-current {
+        border-radius: 20px;
+        border: 1px solid #000;
+        padding: 0;
+        height: 80%;
+    }
+
+    &__card-container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        gap: 2rem; 
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &__star{
+        width: 30px;
+        height: 30px;
+    }
+    &__current-star{
+        width: 40px;
+        height: 40px;
+    }
+    
+}

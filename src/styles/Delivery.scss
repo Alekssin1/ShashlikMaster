@@ -1,0 +1,97 @@
+@import 'Colors';
+.delivery{
+    padding: 3.75rem 7rem;
+    color: $defaultTextColor;
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        font-size: 2em;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin-bottom: 1.875rem;
+        margin-top: 0;
+    }
+.delivery__image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.delivery__image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.delivery__text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  // Your existing styles for the text overlay
+}
+
+&__image-container {
+    position: relative;
+    display: inline-block;
+}
+  
+&__image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+  
+    &__text-overlay{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -30%);
+       height: 60%;
+       overflow: hidden;
+       width: 15.125rem;
+       word-wrap: break-word; 
+       overflow-wrap: break-word;
+       color: $onLightTextColor;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       h2{
+        margin-top: 0;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        font-size: 1.5em;
+        margin-bottom: 0.875rem;
+        color: $highlightedItemColor;
+       }
+       span{
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        margin-bottom: 1.4375rem;
+       }
+       a {
+        white-space: nowrap; 
+        text-decoration: none;
+        color: $onLightTextColor;
+        font-family: 'Centure Gothic';
+        font-size: 1.125em;
+        letter-spacing: 0.15em;
+        padding: 0.4375rem 1.25rem;
+        border: 1px solid $onLightBorderColor;
+        }
+        & a:hover{ 
+            background-color: $highlightedItemColor;
+        }
+    }
+    &__order-delivery-button{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    
+    
+}
