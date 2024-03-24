@@ -1,0 +1,134 @@
+.advantages {
+  background-color: rgba(245, 245, 247, 0.4);
+  color: #000; }
+  .advantages__content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 3.75rem 7rem;
+    position: relative; }
+    @media screen and (max-width: 1024px) {
+      .advantages__content {
+        padding: 3.75rem 4.5rem; } }
+    @media screen and (max-width: 768px) {
+      .advantages__content {
+        padding: 3.75rem  2rem 3.75rem 2rem; } }
+    @media screen and (max-width: 540px) {
+      .advantages__content {
+        padding: 1.3125rem 1.25rem 1.875rem 1.25rem;
+        align-items: center; } }
+    .advantages__content h1 {
+      margin: 0;
+      margin-left: 0.625rem;
+      margin-bottom: 2.5rem;
+      font-size: 1.5em;
+      font-family: 'Century Gothic';
+      font-weight: bold;
+      letter-spacing: 0.15em; }
+      @media screen and (max-width: 650px) {
+        .advantages__content h1 {
+          margin-left: 0;
+          font-size: 1.375em;
+          margin-bottom: 1.5rem;
+          text-align: center; } }
+  .advantages__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center; }
+    @media screen and (max-width: 650px) {
+      .advantages__grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem; } }
+  .advantages__item {
+    grid-column: span 4; }
+  .advantages__pepper {
+    position: absolute;
+    top: 0%;
+    left: 50%; }
+  .advantages__shashlik {
+    position: absolute;
+    top: 15.8%;
+    left: 0; }
+  .advantages__ribs {
+    position: absolute;
+    top: -10%;
+    right: 4.2%; }
+  .advantages__tomato {
+    position: absolute;
+    right: -2%;
+    top: 63%; }
+  .advantages__steak {
+    position: absolute;
+    bottom: -7%;
+    left: 70%; }
+  .advantages__khachapuri {
+    position: absolute;
+    display: none; }
+  .advantages__shashlik-mobile {
+    position: absolute;
+    display: none; }
+  @media screen and (max-width: 870px) {
+    .advantages__pepper {
+      top: 15%;
+      left: 50%;
+      height: 9.5rem;
+      width: 10.25rem; }
+    .advantages__shashlik {
+      position: absolute;
+      top: 15.8%;
+      left: 0; }
+    .advantages__ribs {
+      position: absolute;
+      right: 4.2%; }
+    .advantages__tomato {
+      position: absolute;
+      right: 0;
+      top: 63%; }
+    .advantages__steak {
+      position: absolute;
+      bottom: 0;
+      left: 55%;
+      transform: rotate(-30deg); }
+    .advantages__khachapuri {
+      position: absolute;
+      display: none; } }
+  @media screen and (max-width: 650px) {
+    .advantages__pepper {
+      top: 40%;
+      left: 40%;
+      height: 9.5rem;
+      width: 10.25rem;
+      transform: rotate(30deg); }
+    .advantages__shashlik {
+      display: none; }
+    .advantages__shashlik-mobile {
+      display: block;
+      bottom: -4%;
+      left: 0; }
+    .advantages__ribs {
+      position: absolute;
+      top: 5%;
+      right: -10%; }
+    .advantages__tomato {
+      position: absolute;
+      left: -2%;
+      top: 40%; }
+    .advantages__steak {
+      position: absolute;
+      bottom: 0;
+      left: 55%;
+      height: 8.7rem;
+      width: 9.2rem; }
+    .advantages__khachapuri {
+      position: absolute;
+      display: block;
+      top: 5%;
+      left: 0; } }
+  @media screen and (max-width: 375px) {
+    .advantages__pepper {
+      top: 50%;
+      left: 35%;
+      height: 9.5rem;
+      width: 10.25rem;
+      transform: rotate(30deg); } }

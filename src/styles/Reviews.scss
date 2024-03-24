@@ -1,18 +1,27 @@
 @import 'Colors';
 
 .slick-arrow{
-    width: 60px;
-    height: 60px; 
+    width: 3.75rem;
+    height: 3.75rem; 
     fill: $borderColor;
 }
 .slick-arrow.slick-disabled {
     fill: $arrowControllerColor; 
 }
 .slick-next{
-    right: -85px;
+    right: -2rem;
 }
 .slick-prev{
-    left: -85px;
+    left: -2rem;
+}
+
+@media screen and (max-width: 540px) {
+    .slick-next{
+        right: -2rem;
+    }
+    .slick-prev{
+        left: -2rem;
+    }
 }
 
 .slick-slider{
@@ -20,27 +29,108 @@
         cursor: grab; 
     }
 }
+
+.slider-container{
+    height: max-content;
+}
+
+
 .reviews{
     position: relative;
+    width: 100%;
     padding: 3.75rem 7rem;
     color: $onLightTextColor;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $backgroundWhiteBlockColor;
+    @media screen and (max-width: 1024px) {
+        padding: 3.75rem 4.5rem;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 1.875rem  2rem;
+    }
     
     h1{
+      text-align: center;
       margin-top: 0;
       margin-bottom: 2.5rem;
       font-family: 'Century Gothic';
       font-size: 2em;
       font-weight: bold;
       letter-spacing: 0.15em;
+      @media screen and (max-width: 540px) {
+        margin-bottom: 0.75rem;
+      }
     }
 
-    &__content{
-        display: flex;
-        flex-direction: row;
+    .slider-container{
+        width: 100%;
+    }
+
+
+    .slick-center{
+        background-color: $reviewCardBackground;
+        padding: 0 1.25rem; 
+    }
+
+    .slick-active {
+        // height: 13.625rem!important;
+        border-radius: 1.25rem;
+        border: 1px solid $onLightBorderColor;
+    }
+
+    .slick-current {
+        // height: 308px!important;
+        // width: 378px!important;
+        .reviews__star {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        .reviews__comment-content {
+            span{
+                font-size: 0.875rem;
+            }
+        }
+        .reviews__user-pic{
+            width: 5rem;
+            height: 5rem;     
+         }
+         @media screen and (max-width: 1100px) {
+            .reviews__star {
+                width: 1.875rem;
+                height: 1.875rem;
+            }
+            .reviews__user-pic{
+                width: 4.125rem;
+                height: 4.125rem;    
+             }
+            .reviews__comment-content {
+                margin-top: 1.6875rem;
+                margin-bottom: 0;
+                h2{
+                    margin-bottom: 1rem;
+                }
+                span{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+        @media screen and (max-width: 540px) {
+            .reviews__star {
+                width: 1rem;
+                height: 1rem;
+            }
+            .reviews__user-pic{
+                width: 2rem;
+                height: 2rem; 
+                margin-bottom: 0.5rem;   
+             }
+        }
+    }
+
+    .slider-container{
+        margin: 0 auto;
     }
 
     &__card{
@@ -50,13 +140,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 100%;
         overflow: hidden;
         &.reviews__current {
             padding: 1rem 4.5rem; 
         }
     }
-    
-
     &__comment-content{
         display: flex;
         margin: 1.5625rem 0;
@@ -73,75 +162,54 @@
             word-wrap: break-word; 
             overflow-wrap: break-word;
         }
-        .reviews__card.reviews__current & {
-            margin: 2.5rem 0;
-            h2{
-                margin-bottom: 1rem;
-            }
-        }
         span {
-            // word-break: break-all; 
             word-wrap: break-word; 
             overflow-wrap: break-word;
+            font-size: 0.75rem;
+
         }
+        
+    }
+    &__user-pic{
+       width: 4.125rem;
+       height: 4.125rem;     
     }
     
-    &__slide-controller{
-        width: 60px;
-        height: 60px;
-    }
-
-    &__user-pic{
-        width: 4.125rem;
-        height: 4.125rem;
-        margin-bottom: 0.3125rem;
-        .reviews__card.reviews__current & {
-            width: 5rem;
-            height: 5rem;
-          }
-    }
-     
-    &__current{
-        background-color: $reviewCardBackground;
-        border-radius: 20px;
-        border: 1px solid $onLightBorderColor;
-    }
-
-    &__next-slide{
-        position: absolute;
-        top: 50%;
-        left: 2rem;
-    }
-
-    &__previous-slide{
-        position: absolute;
-        top: 50%;
-        right: 2rem;
-    }
-
-    .reviews__not-current {
-        border-radius: 20px;
-        border: 1px solid #000;
-        padding: 0;
-        height: 80%;
-    }
-
-    &__card-container{
-        display: grid;
-        grid-template-columns: repeat(12, 1fr); 
-        gap: 2rem; 
-        justify-content: center;
-        align-items: center;
-    }
-
-
     &__star{
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
     }
-    &__current-star{
-        width: 40px;
-        height: 40px;
+    
+    @media screen and (max-width: 1100px) {
+        &__star {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        &__user-pic{
+            width: 3.25rem;
+            height: 3.25rem;    
+         }
+        &__comment-content {
+            margin-top: 0.75rem;
+            margin-bottom: 0;
+            span{
+                font-size: 0.75rem;
+            }
+        }
     }
+    @media screen and (max-width: 540px) {
+        &__star  {
+            width: 1rem;
+            height: 1rem;
+        }
+        &__user-pic{
+            width: 2rem;
+            height: 2rem; 
+            margin-bottom: 0.5rem;   
+         }
+    }
+    
+    
+
     
 }
