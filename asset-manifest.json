@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ShashlikMaster/static/css/main.5959dc9a.css",
-    "main.js": "/ShashlikMaster/static/js/main.52c37969.js",
+    "main.css": "/ShashlikMaster/static/css/main.de6339db.css",
+    "main.js": "/ShashlikMaster/static/js/main.8f4d81b5.js",
     "static/js/453.5080cbc5.chunk.js": "/ShashlikMaster/static/js/453.5080cbc5.chunk.js",
     "static/media/brown-wooden-textured-flooring-background.jpg": "/ShashlikMaster/static/media/brown-wooden-textured-flooring-background.299aeceb99bc5eedda8f.jpg",
     "static/media/smaller-logo.svg": "/ShashlikMaster/static/media/smaller-logo.d47edd909362b395940b76730431a0bd.svg",
@@ -49,12 +49,12 @@
     "static/media/end-skewer.svg": "/ShashlikMaster/static/media/end-skewer.29890e60abf45c620495822565964777.svg",
     "static/media/skewer-end.svg": "/ShashlikMaster/static/media/skewer-end.6cc601b6d9280be76d4e38624f8c9cf9.svg",
     "static/media/end-button.svg": "/ShashlikMaster/static/media/end-button.ad36b1250e8461fe7942065ee33b3c3d.svg",
-    "main.5959dc9a.css.map": "/ShashlikMaster/static/css/main.5959dc9a.css.map",
-    "main.52c37969.js.map": "/ShashlikMaster/static/js/main.52c37969.js.map",
+    "main.de6339db.css.map": "/ShashlikMaster/static/css/main.de6339db.css.map",
+    "main.8f4d81b5.js.map": "/ShashlikMaster/static/js/main.8f4d81b5.js.map",
     "453.5080cbc5.chunk.js.map": "/ShashlikMaster/static/js/453.5080cbc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5959dc9a.css",
-    "static/js/main.52c37969.js"
+    "static/css/main.de6339db.css",
+    "static/js/main.8f4d81b5.js"
   ]
 }
