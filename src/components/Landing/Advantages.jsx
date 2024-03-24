@@ -12,6 +12,8 @@ import { ReactComponent as ShashlikBG} from "../../assets/images/Advantages/shas
 import { ReactComponent as RibsBG} from "../../assets/images/Advantages/ribs.svg"
 import { ReactComponent as TomatoBG} from "../../assets/images/Advantages/tomato.svg"
 import { ReactComponent as SteakBG} from "../../assets/images/Advantages/steak.svg"
+import { ReactComponent as KhachapuriBG} from "../../assets/images/Advantages/khachapuri.svg"
+import { ReactComponent as ShashlikMobileBg } from "../../assets/images/Advantages/shashlik 2.svg"
 
 
 function Advantages() {
@@ -51,6 +53,8 @@ function Advantages() {
         <RibsBG className="advantages__ribs"/>
         <TomatoBG className= "advantages__tomato" />
         <SteakBG className= "advantages__steak" />
+        <KhachapuriBG className= "advantages__khachapuri" />
+        <ShashlikMobileBg className= "advantages__shashlik-mobile" />
         </div>  
     </div>
   )

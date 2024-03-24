@@ -5,7 +5,7 @@ import { ReactComponent as User} from '../../assets/images/Reviews/user.svg';
 import { ReactComponent as StarIcon} from '../../assets/images/Reviews/star.svg'; 
 import { ReactComponent as UnactiveStarIcon} from '../../assets/images/Reviews/unactive-star.svg';
 
-const ReviewCard = ({ name, text, rating, current  }) => {
+const ReviewCard = ({ name, text, rating, current = false  }) => {
   return (
     <div className={`reviews__card ${current ? 'reviews__current' : 'reviews__not-current'} `}>
       <User className="reviews__user-pic" />

@@ -8,6 +8,7 @@ import Reviews from '../components/Landing/Reviews';
 import Delivery from '../components/Landing/Delivery';
 import Recommendation from '../components/Landing/Recommendation';
 import Footer from '../components/Footer';
+import BurgerMenu from '../components/UI/BurgerMenu';
 
 function Landing() {
   return (
@@ -20,6 +21,7 @@ function Landing() {
       <Delivery />
       <Recommendation />
       <Footer />
+      {/* <BurgerMenu /> */}
     </div>
 
   )

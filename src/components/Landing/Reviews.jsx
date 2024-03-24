@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import '../../styles/Reviews.scss'
 import ReviewCard from '../UI/ReviewCard';
 import { Element } from 'react-scroll';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
 import { ReactComponent as NextArrowSVG} from '../../assets/images/Reviews/arrow-left.svg';
 import { ReactComponent as PreviousArrowSVG} from '../../assets/images/Reviews/arrow-right.svg';
 
@@ -26,6 +23,26 @@ const reviews = [
       text: "Найсмачніший шашлик, який я їв на даний моментfdsafffffff ffffffffffffffffffffffffffffffff fffffffffff fffffffff.",
       rating: 5,
     },
+    // {
+    //   name: "Олег",
+    //   text: "Найсмачніший шашлик, який я їв на даний моментfdsafffffff ffffffffffffffffffffffffffffffff fffffffffff fffffffff.",
+    //   rating: 5,
+    // },
+    // {
+    //   name: "Інна",
+    //   text: "Найсмачніший шашлик, який я їв на даний моментfdsafffffff ffffffffffffffffffffffffffffffff fffffffffff fffffffff.",
+    //   rating: 4,
+    // },
+    // {
+    //   name: "Джеремі",
+    //   text: "Найсмачніший шашлик, який я їв на даний моментfdsafffffff ffffffffffffffffffffffffffffffff fffffffffff fffffffff.",
+    //   rating: 4,
+    // },
+    // {
+    //   name: "Оля",
+    //   text: "Найсмачніший шашлик, який я їв на даний моментfdsafffffff ffffffffffffffffffffffffffffffff fffffffffff fffffffff.",
+    //   rating: 5,
+    // },
   ];
 
 function Reviews() {

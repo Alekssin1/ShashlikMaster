@@ -97,13 +97,6 @@ function Recommendation() {
               initialSlide: 2
             }
           },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
         ]
       };
   return (
@@ -115,7 +108,7 @@ function Recommendation() {
             <h1>Рекомендуємо скуштувати</h1>
             <Slider {...settings}>
                 {products.map((product, index) => (
-                    <RecommendationCard key={index} {...product} />
+                    <RecommendationCard key={index} {...product}/>
                 ))}
             </Slider>
         </div>

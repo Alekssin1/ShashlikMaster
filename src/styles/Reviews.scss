@@ -1,5 +1,25 @@
 @import 'Colors';
 
+.slick-arrow{
+    width: 60px;
+    height: 60px; 
+    fill: $borderColor;
+}
+.slick-arrow.slick-disabled {
+    fill: $arrowControllerColor; 
+}
+.slick-next{
+    right: -85px;
+}
+.slick-prev{
+    left: -85px;
+}
+
+.slick-slider{
+    &:hover {
+        cursor: grab; 
+    }
+}
 .reviews{
     position: relative;
     padding: 3.75rem 7rem;

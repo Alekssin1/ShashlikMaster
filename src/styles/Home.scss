@@ -4,13 +4,34 @@
     padding: 5.9375rem 7rem 3.75rem 7rem;
     color: $defaultTextColor;
     letter-spacing: 0.15em;
+    @media screen and (max-width: 1024px) {
+        padding: 5.9375rem 4.5rem 3.75rem 4.5rem; 
+    }
+    @media screen and (max-width: 768px) {
+        padding: 5.9375rem 2rem 3.75rem 2rem;
+    }
+    @media screen and (max-width: 540px) {
+        padding: 3.75rem 1.25rem 3.75rem 1.25rem;
+    }
+    
+
 
     &__grid-container {
         margin-top: 3.75rem;
         display: grid;
         grid-template-columns: repeat(12, 1fr); 
         gap: 2rem; 
-        justify-content: center
+        justify-content: center;
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(6, 1fr); 
+        }
+        @media screen and (max-width: 540px) {
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 1.9375rem;
+            margin-top: 3.75rem;
+        }
+        
+        
     }
 
     &__left-content {
@@ -36,6 +57,22 @@
             letter-spacing: 0.15em;
             font-size: 1.125em;
         }
+        @media screen and (max-width: 1024px) {
+            grid-column: span 4; 
+            h1 {font-size: 2em;}
+        }
+        @media screen and (max-width: 540px) {
+            grid-column: span 2; 
+            h1 {
+                font-size: 2.25em;
+                letter-spacing: 0.05em;
+                margin-bottom: 1.5rem;
+            }
+            h2 {
+                font-size: 1.125em;
+                margin-bottom: 2.3125rem;
+            }
+        }
     }
 
 
@@ -56,7 +93,14 @@
         & a:hover{ 
             background-color: $highlightedItemColor;
         }
-        
+        @media screen and (max-width: 540px) {
+            grid-column: span 2;
+             margin-bottom: 1.5rem;
+            a {
+                font-size: 1em;
+                letter-spacing: 0em;               
+            }
+        }
     }
 
     &__right-content {
@@ -69,10 +113,18 @@
             max-width: 100%; 
             height: auto; 
         }
+
+        @media screen and (max-width: 1024px) {
+            grid-column: span 2; 
+        }
     }
 
     &__highlighted-text{
         color: $highlightedItemColor;
+    }
+
+    &__skewer-button{
+        height: 0.625rem;
     }
 
 }

@@ -4,6 +4,7 @@
     width: 100%;
     z-index: 1;
     img{
+        height: 0.625rem;
         width: 100%;
     }
 }
@@ -22,15 +23,31 @@
     width: 60px;
     height: 60px; 
     fill: $borderColor;
+    @media screen and (max-width: 768px) {
+        width: 2rem;
+        height: 2rem; 
+    }
 }
 .slick-arrow.slick-disabled {
     fill: $arrowControllerColor; 
 }
 .slick-next{
     right: -85px;
+    @media screen and (max-width: 1024px) {
+        right: -60px;
+    }
+    @media screen and (max-width: 768px) {
+        right: -2rem;
+    }
 }
 .slick-prev{
     left: -85px;
+    @media screen and (max-width: 1024px) {
+        left: -60px;
+    }
+    @media screen and (max-width: 768px) {
+        left: -2rem;
+    }
 }
 
 .slick-slider{
@@ -43,7 +60,12 @@
     width: 100%; 
     display: flex;
     flex-direction: column;
-
+    @media screen and (max-width: 1024px) {
+        padding: 3.75rem 4.5rem 7rem 4.5rem;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 1.875rem  2rem;
+    }
     h1{
         font-size: 2em;
         font-family: 'Century Gothic';
@@ -52,12 +74,22 @@
         margin-top: 0;
         margin-bottom: 2rem;
         letter-spacing: 0.15em;
+        @media screen and (max-width: 1024px) {
+            font-size: 2em;
+            margin-bottom: 2rem;
+        }
+        @media screen and (max-width: 540px) {
+            font-size: 1.375em;
+            margin-bottom: 1.375rem;
+        }
     }
     &__product-card {
         color: $defaultTextColor;
         font-family: 'Inter';
-        margin-right: 2rem; 
-        
+        margin: 0rem 1rem; 
+        @media screen and (max-width: 768px) {
+            margin: 0rem 0.5rem;
+        }
     }
     &__product-card-image-container {
         height: 12.5rem;
