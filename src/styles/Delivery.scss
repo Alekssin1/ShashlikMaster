@@ -12,12 +12,13 @@
     @media screen and (max-width: 768px) {
         padding: 1.875rem  2rem;
     }
-    // @media screen and (max-width: 540px) {
-    //     padding: 1.875rem 1.25rem;
-    // }
-    // @media screen and (max-width: 440px) {
-    //     padding: 1.875rem 0rem;
-    // }
+    @media screen and (max-width: 540px) {
+        padding: 1.875rem 1.25rem;
+    }
+    @media screen and (max-width: 450px) {
+        padding: 1.875rem 0rem;
+    }
+
     h1{
         font-size: 2em;
         font-weight: 500;
@@ -27,6 +28,10 @@
         @media screen and (max-width: 540px) {
             font-size: 1.375em;
         }
+        @media screen and (max-width: 450px) {
+            padding: 0rem 1.25rem;
+        }
+       
     }
 .delivery__image-container {
   position: relative;
@@ -57,13 +62,17 @@
 &__image-container img {
     width: 100%;
     height: auto;
-    min-height: 280px;
+    min-height: 17.5rem;
+    min-height: fit-content;
     display: block;
-    @media screen and (max-width: 420px) {
-        min-height: 300px;
+    min-width: 25.75rem;
+    @media screen and (max-width: 460px) {
+        min-width: 22.125rem;
+        
     }
-    @media screen and (max-width: 360px) {
-        min-height: 330px;
+    @media screen and (max-width: 370px) {
+        min-width: 18rem;
+        min-height: 18.875rem;
     }
 }
   
@@ -83,17 +92,17 @@
        flex-direction: column;
        align-items: center;
        @media screen and (max-width: 580px) {
-        width: 11.875rem;
+        max-width: 11.875rem;
        }
-       @media screen and (max-width: 420px) {
-        width: 11rem;
-       }
-       @media screen and (max-width: 375px) {
-        width: 10rem;
-       }
-       @media screen and (max-width: 360px) {
-        width: 9rem;
-       }
+       @media screen and (max-width: 460px) {
+        max-width: 11.5625rem;
+        }
+       @media screen and (max-width: 370px) {
+            max-width: 9.375rem;
+        }
+        @media screen and (max-width: 330px) {
+            max-width: 10rem;
+        }
        h2{
         margin-top: 0;
         font-weight: 500;
