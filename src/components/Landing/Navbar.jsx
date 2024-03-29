@@ -9,7 +9,7 @@ import { ReactComponent as SmallerLogo } from "../../assets/images/smaller-logo.
 import { Sling as Hamburger } from 'hamburger-react'
 import BurgerMenu from "../UI/BurgerMenu";
 
-function Navbar() {
+function Navbar({ navigationItems }) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -62,36 +62,25 @@ function Navbar() {
           </a>
           <nav>
             <ul className="navigation-bar__navigation-list">
-              <li className="navigation-bar__navigation-item">
-                <Link
-                  to="about-us"
-                  smooth={true}
-                  duration={500}
-                  className="navigation-link">ПРО НАС</Link>
-              </li>
-              <li className="navigation-bar__navigation-item">
-                <Link
-                  to="reviews"
-                  smooth={true}
-                  duration={500}
-                  className="navigation-link">ВІДГУКИ</Link>
-              </li>
-              <li className="navigation-bar__navigation-item">
-                <Link
-                  to="delivery"
-                  smooth={true}
-                  duration={500}
-                  className="navigation-link">ДОСТАВКА ТА ОПЛАТА</Link>
-              </li>
+              {navigationItems.map((item, index) => (
+                <li className="navigation-bar__navigation-item" key={index}>
+                  <Link
+                    to={item.link}
+                    smooth={true}
+                    duration={500}
+                    className="navigation-link"
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
         <div className="navigation-bar__interact-buttons">
           <div className="navigation-bar__interact-button navigation-bar__contacts-list" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
             <Call />
-            <span>
-              +38(093) 448-27-73
-            </span>
+            <span>+38(093) 448-27-73</span>
             {isDropdownOpen && (
               <div className="navigation-bar__dropdown">
                 <span>+38(099) 448-33-12</span>

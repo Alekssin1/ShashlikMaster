@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../styles/Recommendation.scss'
 import Skewer from '../../assets/images/Recommendation/skewer.png'
-import Product from '../../assets/images/Recommendation/productr.png'
-import Product2 from '../../assets/images/Recommendation/product2.png'
-import Set from '../../assets/images/Recommendation/set.png'
+import Product from '../../assets/images/Recommendation/productr.webp'
+import Product2 from '../../assets/images/Recommendation/product2.webp'
+import Set from '../../assets/images/Recommendation/set.webp'
 import RecommendationCard from '../UI/RecommendationCard';
 import { ReactComponent as PreviousArrowSVG} from '../../assets/images/Reviews/back.svg';
 import { ReactComponent as NextArrowSVG} from '../../assets/images/Reviews/forward.svg';

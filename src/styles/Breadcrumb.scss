@@ -1,0 +1,29 @@
+.bread-crumb{
+    display: flex;
+    flex-direction: column;
+    padding-top: 95px;
+    margin-bottom: 0.6875rem;
+    margin-left: 7rem;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+
+    &__circle {
+        width: 0.625rem;
+        height: 0.625rem;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    
+    &__line {
+        flex-grow: 1;
+        height: 0.0625rem;
+        background-color: white; 
+    }
+}
+
+

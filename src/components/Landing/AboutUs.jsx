@@ -1,10 +1,10 @@
 import React from 'react'
 import { Element } from 'react-scroll';
 import '../../styles/AboutUs.scss'
-import ShashlikMaster from "../../assets/images/About/Shashlik_master.png"
-import AboutProduct from "../../assets/images/About/About_meat.png"
-import ThermalBox from "../../assets/images/About/Thermal Box.png"
-import AboutPrice from '../../assets/images/About/Affordable_price.png'
+import ShashlikMaster from "../../assets/images/About/Shashlik_master.webp"
+import AboutProduct from "../../assets/images/About/About_meat.webp"
+import ThermalBox from "../../assets/images/About/Thermal Box.webp"
+import AboutPrice from '../../assets/images/About/Affordable_price.webp'
 import AboutUsItem from '../UI/AboutUsItem'
 
 const aboutItems = [

@@ -1,0 +1,87 @@
+@import "../Colors.scss";
+
+.catalogue-product-card{
+    grid-column: span 3;
+    background-color: $productCarddBackground;
+    border-radius: 1.875rem;
+    overflow: hidden;
+    max-width: 17.5rem;
+    color: $defaultTextColor;
+    &__content{
+        word-wrap: break-word;
+        padding: 0.625rem 1.3125rem 0 1.3125rem;
+        overflow-wrap: break-word;
+        font-family: 'Inter';
+        font-weight: 400;
+        h2{
+            margin:0;
+            font-size: 1.125em;
+            font-weight: 400;
+            height: 4.0625rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        span{
+            size: 1rem;
+            color: $spanPriceColor;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin-bottom: 1.1875rem;
+        }
+    }
+    &__product-image-container{
+        display: flex;
+        align-items: center;
+        height: 11.5625rem;
+        width: 100%;
+        max-width: 22.8125rem;
+        margin-bottom: 0.9375rem;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .price-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.3125rem;
+    
+        &__circle {
+            width: 0.625rem;
+            height: 0.625rem;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+
+        button {
+            padding: 0.5rem 2rem;
+            border: 1px solid $borderColor;
+            width: fit-content;
+            color: $defaultTextColor;
+            background-color: $priceButtonBackground;
+            font-size: 1.25em;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        
+            &:hover {
+                background-color: $highlightedItemColor;
+            }
+        }
+        
+        
+        &__line {
+            flex-grow: 1;
+            height: 0.0625rem;
+            background-color: white; 
+        }
+    }
+    
+}

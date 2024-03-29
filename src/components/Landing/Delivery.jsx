@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import '../../styles/Delivery.scss';
 import { Element } from 'react-scroll';
-import AboutUsItem from '../../assets/images/Delivery/delivery-list.png';
-import AboutUsItemMobile from '../../assets/images/Delivery/background.png'; 
+import AboutUsItem from '../../assets/images/Delivery/delivery-list.webp';
+import AboutUsItemMobile from '../../assets/images/Delivery/background.webp'; 
 import { ReactComponent as SkewerStart } from '../../assets/images/Delivery/skewer-start.svg';
 import { ReactComponent as SkewerEnd } from '../../assets/images/Delivery/skewer-end.svg';
 

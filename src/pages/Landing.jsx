@@ -8,20 +8,31 @@ import Reviews from '../components/Landing/Reviews';
 import Delivery from '../components/Landing/Delivery';
 import Recommendation from '../components/Landing/Recommendation';
 import Footer from '../components/Footer';
-import BurgerMenu from '../components/UI/BurgerMenu';
 
 function Landing() {
   return (
     <div className='landing-page'>
-      <Navbar />
+      <Navbar
+        navigationItems={[
+          { title: 'ПРО НАС', link: 'about-us' },
+          { title: 'ВІДГУКИ', link: 'reviews' },
+          { title: 'ДОСТАВКА ТА ОПЛАТА', link: 'delivery' },
+        ]}
+      />
       <Home />
       <Advantages />
       <AboutUs />    
       <Reviews />
       <Delivery />
       <Recommendation />
-      <Footer />
-      {/* <BurgerMenu /> */}
+      <Footer
+        footerItems={[
+          { title: 'ПРО НАС', link: 'about-us' },
+          { title: 'ВІДГУКИ', link: 'reviews' },
+          { title: 'ДОСТАВКА ТА ОПЛАТА', link: 'delivery' },
+        ]}
+        informationColumns = {1}
+      />
     </div>
 
   )
