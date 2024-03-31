@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import Navbar from '../components/Landing/Navbar';
-import Catalogue from '../components/Menu/Catalogue'
-import '../styles/Menu/MenuPage.scss'
-import Footer from '../components/Footer';
-import Breadcrumb from '../components/Breadcrumb';
+import Navbar from 'components/Landing/Navbar/index';
+import Catalogue from 'components/Menu/Catalogue/index'
+import 'components/Menu/index.scss'
+import Footer from 'components/Footer/index';
+import Breadcrumb from 'components/Breadcrumb/index';
 import { useLocation } from 'react-router-dom';
 
 function MenuPage() {

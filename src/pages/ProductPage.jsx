@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import Navbar from '../components/Landing/Navbar';
-import ProductInfo from '../components/Product/ProductInfo';
-import '../styles/Product/ProductPage.scss'
-import Footer from '../components/Footer'
-import Breadcrumb from '../components/Breadcrumb'
+import Navbar from 'components/Landing/Navbar/index';
+import ProductInfo from 'components/Product/ProductInfo/index';
+import 'components/Product/index.scss'
+import Footer from 'components/Footer/index'
+import Breadcrumb from 'components/Breadcrumb/index'
 import { useLocation } from 'react-router-dom';
 
 function ProductPage() {

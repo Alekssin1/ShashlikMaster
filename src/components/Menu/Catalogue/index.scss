@@ -1,0 +1,147 @@
+@import "styles/Colors";
+
+.catalogue {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    padding: 2.5625rem 7rem 3.0625rem 7rem;
+    @media screen and (max-width: 1200px) {
+        padding: 3.75rem 4.5rem;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 3.75rem 4.5rem;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0 3.75rem 2rem 3.75rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 540px) {
+        padding: 1.3125rem 1.25rem 1.875rem 1.25rem;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    &__menu {
+        grid-column: span 3;
+        @media screen and (max-width: 1200px) {
+            grid-column: span 2;
+        }
+        @media screen and (max-width: 768px) {
+            grid-column: span 2;
+            width: 100%;
+            margin-top: 0.6875rem;
+            margin-bottom: 0.6875rem;
+        }
+        .menu__list {
+            list-style-type: none;
+            white-space: wrap; 
+            margin: 0;
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 1em;
+            color: $defaultTextColor;
+            letter-spacing: 0.1em;
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                overflow-x: scroll;
+                -webkit-overflow-scrolling: touch; 
+                scrollbar-width: none; 
+                -ms-overflow-style: none;
+                -webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+        .menu__item {
+            height: 2.5rem;
+            transition: color 0.3s;
+        
+            &:hover {
+                color: $highlightedItemColor; 
+                cursor: pointer; 
+            }
+        }
+        .menu__item:not(:last-child){
+            margin-bottom: 1.25rem; 
+            @media screen and (max-width: 768px) {
+                margin-right: 1.5625rem;  
+                margin-bottom: 0; 
+            }
+        }
+        .menu__unit{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                text-wrap: nowrap;
+            }
+            .unit__icon {
+                margin-right: 1rem;
+                fill: $defaultTextColor; 
+                transition: fill 0.3s; 
+                min-width: fit-content;
+            }
+
+            .menu__item:hover .unit__icon {
+                fill: $highlightedItemColor; 
+            }
+        }
+    }
+
+    &__section {
+        grid-column: span 9;
+        width: 100%;
+        @media screen and (max-width: 1200px) {
+            grid-column: span 4;
+        }
+        @media screen and (max-width: 768px) {
+            grid-column: span 2;
+        }
+        h1 {
+            grid-column: span 9;
+            @media screen and (max-width: 1200px) {
+                grid-column: span 4;
+            }
+            @media screen and (max-width: 768px) {
+                grid-column: span 2;
+            }
+            @media screen and (max-width: 540px) {
+                font-size: 1.375rem;
+                margin-bottom: 2rem;
+            }
+            margin-top: 0;
+            font-family: 'Century Gothic';
+            font-size: 2.5em;
+            font-weight: normal;
+            letter-spacing: 0.1em;
+            color: $defaultTextColor;
+            margin-bottom: 3.125rem;
+        }
+        .section__cards-grid {
+            display: grid;
+            grid-column: span 9;
+            width: 100%;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 2rem;
+            margin-bottom: 1.875rem;
+            @media screen and (max-width: 1200px) {
+                grid-column: span 4; 
+                grid-template-columns: repeat(4, 1fr);
+            }
+            @media screen and (max-width: 768px) {
+                grid-column: span 2;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+}
+

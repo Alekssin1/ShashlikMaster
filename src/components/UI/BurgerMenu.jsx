@@ -1,5 +1,5 @@
 import React from "react";
-import '../../styles/Navbar.scss'
+import 'components/Landing/Navbar/index'
 import { Link } from "react-scroll";
 
 
