@@ -3,7 +3,7 @@ import '../../styles/Navbar.scss'
 import { Link } from "react-scroll";
 
 
-function BurgerMenu({ setIsOpen }) {
+function BurgerMenu({ setIsOpen, navigationItems }) {
     const handleClick = () => {
         setIsOpen(false); 
     };
@@ -11,42 +11,30 @@ function BurgerMenu({ setIsOpen }) {
     
     <div className="burger-menu ">
       <nav>
-        <ul className="burger-menu__navigation-list ">
-            <li className="burger-menu__navigation-item">
-            <Link
-                to="about-us"
-                smooth={true}
-                duration={500}
-                className="burger-menu-link"
-                onClick={handleClick}>ПРО НАС</Link>
-            </li>
-            <li className="burger-menu__navigation-item">
-            <Link
-                to="reviews"
-                smooth={true}
-                duration={500}
-                className="burger-menu-link"
-                onClick={handleClick}>ВІДГУКИ</Link>
-            </li>
-            <li className="burger-menu__navigation-item">
-            <Link
-                to="delivery"
-                smooth={true}
-                duration={500}
-                className="burger-menu-link"
-                onClick={handleClick}>ДОСТАВКА ТА ОПЛАТА</Link>
-            </li>
+      <ul className="burger-menu__navigation-list ">
+            {navigationItems.map((item, index) => (
+              <li className="burger-menu__navigation-item" key={index}>
+                <Link
+                    to={item.link}
+                    smooth={true}
+                    duration={500}
+                    className="burger-menu-link"
+                    onClick={handleClick}>
+                    {item.title}
+                </Link>
+              </li>
+            ))}
         </ul>
       </nav>
       <ul className="burger-menu__contacts-list">
         <li className="burger-menu__contacts-item">
-          +38(093) 448-27-73
+          <a href="tel:+380934482773">+38(093) 448-27-73</a>
         </li>
         <li className="burger-menu__contacts-item">
-          +38(099) 448-33-12
+          <a href="tel:+380994483312">+38(099) 448-33-12</a>
         </li>
         <li className="burger-menu__contacts-item">
-          +38(068) 455-84-69
+          <a href="tel:+380684558469">+38(068) 455-84-69</a>
         </li>
       </ul>
     </div>

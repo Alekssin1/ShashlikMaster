@@ -3,8 +3,9 @@ import '../../styles/Delivery.scss';
 import { Element } from 'react-scroll';
 import AboutUsItem from '../../assets/images/Delivery/delivery-list.webp';
 import AboutUsItemMobile from '../../assets/images/Delivery/background.webp'; 
-import { ReactComponent as SkewerStart } from '../../assets/images/Delivery/skewer-start.svg';
-import { ReactComponent as SkewerEnd } from '../../assets/images/Delivery/skewer-end.svg';
+// import { ReactComponent as SkewerStart } from '../../assets/images/Delivery/skewer-start.svg';
+// import { ReactComponent as SkewerEnd } from '../../assets/images/Delivery/skewer-end.svg';
+import { Link } from "react-router-dom";
 
 function Delivery() {
   const [isMobileScreen, setIsMobile] = useState(window.innerWidth < 460);
@@ -40,9 +41,10 @@ function Delivery() {
               детальніше на сторінці “Доставка та оплата”.
             </span>
             <div className="delivery__order-delivery-button">
-              <SkewerStart />
-              <a href="#">Замовити</a>
-              <SkewerEnd />
+              <div className="delivery__circle"></div>
+              <div className="delivery__line"></div>
+              <Link to={"/menu"}>Замовити</Link>
+              <div className="delivery__line"></div>
             </div>
           </div>
         </div>

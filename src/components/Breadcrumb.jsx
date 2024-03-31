@@ -9,7 +9,6 @@ import "../styles/Breadcrumb.scss"
 
 function handleClick(event) {
     event.preventDefault();
-    console.info('You clicked a breadcrumb.');
 }
 
 export default function Breadcrumb() {
@@ -24,7 +23,7 @@ export default function Breadcrumb() {
             href="/#"
             onClick={handleClick}
             style={{ '&:hover': { color: '#a63d40' } }} 
-        >
+        > 
             Меню
         </Link>,
         <Typography key="3" color="text.primary">

@@ -46,11 +46,19 @@
 
 .delivery__text-overlay {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -30%);
   @media screen and (max-width: 580px) {
     top: 52%;
+  }
+  span{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    @media screen and (max-width: 580px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
   }
 }
 
@@ -150,6 +158,17 @@
         display: flex;
         align-items: center;
         width: 100%;
+        .delivery__circle {
+            width: 0.625rem;
+            height: 0.625rem;
+            border-radius: 50%;
+            border: 1px solid $onLightBorderColor;
+        } 
+        .delivery__line {
+            flex-grow: 1;
+            height: 0.0625rem;
+            background-color: $onLightBorderColor; 
+        }
     }
 
     

@@ -66,7 +66,7 @@ const settings = {
       }
     },
     {
-      breakpoint: 886,
+      breakpoint: 950,
       settings: {
         slidesToShow: 1,
       }

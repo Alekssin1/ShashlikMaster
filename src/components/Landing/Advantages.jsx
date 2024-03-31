@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../../styles/Advantages.scss'
 import { ReactComponent as Skewer} from '../../assets/images/Advantages/skewer.svg';
 import { ReactComponent as DeliveryTime} from '../../assets/images/Advantages/delivery-time.svg';
@@ -17,6 +17,26 @@ import { ReactComponent as ShashlikMobileBg } from "../../assets/images/Advantag
 
 
 function Advantages() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 650);
+    };
+
+    checkScreenSize(); 
+
+    const handleResize = () => {
+      checkScreenSize(); 
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
   return (
     <div className='advantages'>
       <div className="advantages__content">
@@ -32,21 +52,41 @@ function Advantages() {
             header="4.4"
             spanText="середня оцінка за 400 відгуків"
           />
-          <AdvantageCard className="advantages__item"
-            picture={<NewClient />}
-            header="96%"
-            spanText="нових клієнтів стають постійними"
-          />
-          <AdvantageCard className="advantages__item"
-            picture={<DeliveryTime />}
-            header="60-120"
-            spanText="хвилин займає доставка"
-          />
-          <AdvantageCard className="advantages__item"
-            picture={<GoodReview />}
-            header="250+"
-            spanText="задоволених клієнтів"
-          />
+          {isSmallScreen
+              ? <AdvantageCard className="advantages__item"
+                  picture={<DeliveryTime />}
+                  header="60-120"
+                  spanText="хвилин займає доставка"
+                />
+              : <AdvantageCard className="advantages__item"
+                  picture={<NewClient />}
+                  header="96%"
+                  spanText="нових клієнтів стають постійними"
+                />}
+          {isSmallScreen
+              ? <AdvantageCard className="advantages__item"
+                  picture={<GoodReview />}
+                  header="250+"
+                  spanText="задоволених клієнтів"
+                />
+              : <AdvantageCard className="advantages__item"
+                  picture={<DeliveryTime />}
+                  header="60-120"
+                  spanText="хвилин займає доставка"
+                />}
+          
+          {isSmallScreen
+              ? <AdvantageCard className="advantages__item"
+                  picture={<NewClient />}
+                  header="96%"
+                  spanText="нових клієнтів стають постійними"
+                />
+              : <AdvantageCard className="advantages__item"
+                  picture={<GoodReview />}
+                  header="250+"
+                  spanText="задоволених клієнтів"
+                />}
+          
         </div>
         <ChilliPepperBG className="advantages__pepper" />
         <ShashlikBG className="advantages__shashlik" />

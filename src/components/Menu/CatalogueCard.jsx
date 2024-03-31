@@ -1,21 +1,22 @@
 import React from 'react';
-import "../../styles/Menu/CatalogueCard.scss"
+import { Link } from "react-router-dom";
 
-const CatalogueCard = ({ image, title, weight, price  }) => {
+
+const CatalogueCard = ({ id, category, image, title, weight, price  }) => {
   return (
     <div className="catalogue-product-card">
         <div className="catalogue-product-card__content">
             <div className="catalogue-product-card__product-image-container">
-                <img src={image} alt={title}/>
+                <Link to={`/menu/${category}/${id}`}><img src={image} alt={title}/></Link>
             </div>
-            <h2>{title}</h2>
+            <h2><Link to={`/menu/${category}/${id}`}>{title}</Link></h2>
             <span>{weight}</span>
         </div>
         <div className="catalogue-product-card__product-price-label">
               <div className='price-label'>
                 <div className="divider__circle"></div>
                 <div className="divider__line"></div>
-                <button type='button'>{price}</button>
+                <button type='button'>{price} ГРН</button>
                 <div className="divider__line"></div>
               </div>
         </div>

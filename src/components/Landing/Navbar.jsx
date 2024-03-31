@@ -80,11 +80,11 @@ function Navbar({ navigationItems }) {
         <div className="navigation-bar__interact-buttons">
           <div className="navigation-bar__interact-button navigation-bar__contacts-list" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
             <Call />
-            <span>+38(093) 448-27-73</span>
+            <a href="tel:+380934482773">+38(093) 448-27-73</a>
             {isDropdownOpen && (
               <div className="navigation-bar__dropdown">
-                <span>+38(099) 448-33-12</span>
-                <span>+38(068) 455-84-69</span>
+                <a href="tel:+380994483312">+38(099) 448-33-12</a>
+                <a href="tel:+380684558469">+38(068) 455-84-69</a>
               </div>
             )}
             <DropList />
@@ -97,7 +97,7 @@ function Navbar({ navigationItems }) {
           </div>
         </div>
       </header>
-      {isOpen && <BurgerMenu setIsOpen={setOpen} />}
+      {isOpen && <BurgerMenu setIsOpen={setOpen} navigationItems={navigationItems} />}
     </>
   );
 }

@@ -1,12 +1,23 @@
 @import 'Colors';
 .background-skewer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: relative;
     width: 100%;
     z-index: 1;
-    img{
+    &__circle {
+        width: 0.625rem;
         height: 0.625rem;
-        width: 100%;
+        border-radius: 50%;
+        border: 1px solid white;
+    } 
+    &__line {
+        flex-grow: 1;
+        height: 0.0625rem;
+        background-color: white; 
     }
+
 }
 .last-skewer::after {
     content: '';
@@ -19,42 +30,7 @@
     z-index: -1; 
     transform-origin: bottom left;
 }
-.slick-arrow{
-    width: 60px;
-    height: 60px; 
-    fill: $borderColor;
-    @media screen and (max-width: 768px) {
-        width: 2rem;
-        height: 2rem; 
-    }
-}
-.slick-arrow.slick-disabled {
-    fill: $arrowControllerColor; 
-}
-.slick-next{
-    right: -85px;
-    @media screen and (max-width: 1024px) {
-        right: -60px;
-    }
-    @media screen and (max-width: 768px) {
-        right: -2rem;
-    }
-}
-.slick-prev{
-    left: -85px;
-    @media screen and (max-width: 1024px) {
-        left: -60px;
-    }
-    @media screen and (max-width: 768px) {
-        left: -2rem;
-    }
-}
 
-.slick-slider{
-    &:hover {
-        cursor: grab; 
-    }
-}
 .recommendation {
     padding: 3.75rem 7rem;
     width: 100%; 
@@ -108,7 +84,7 @@
     &__product-info{
         display: flex;
         flex-direction: column;
-        margin-bottom: 0.75rem;
+        margin-bottom: 1rem;
         font-weight: 400;
         a{
             height: 3rem;
@@ -138,4 +114,91 @@
             transition: 0.5s;
         }        
     }
+
+    .slick-arrow{
+        width: 60px;
+        height: 60px; 
+        fill: $borderColor;
+        @media screen and (max-width: 768px) {
+            width: 2rem;
+            height: 2rem; 
+        }
+    }
+    .slick-arrow.slick-disabled {
+        fill: $arrowControllerColor; 
+    }
+    
+    .slick-next{
+        right: -85px;
+        @media screen and (max-width: 1024px) {
+            right: -60px;
+        }
+        @media screen and (max-width: 768px) {
+            right: -2rem;
+        }
+        @media screen and (max-width: 600px) {
+            display: none!important;
+        }
+    }
+    .slick-prev{
+        left: -85px;
+        @media screen and (max-width: 1024px) {
+            left: -60px;
+        }
+        @media screen and (max-width: 768px) {
+            left: -2rem;
+        }
+        @media screen and (max-width: 600px) {
+            display: none!important;
+        }
+    }
+    
+    .slick-slider{
+        &:hover {
+            cursor: grab; 
+        }
+    }
+
+
+    &__custom-arrows{
+        margin-top: 1.875rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (min-width: 600px) {
+            display: none;
+        }
+        button {
+            display: flex;
+            width: 3rem;
+            height: 3rem;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            outline: none;
+            background-color: $priceButtonBackground;
+            color: $previousButtonColorRecommendations;    
+            transition: all .5s;
+            font-weight: 400;
+            font-family: 'Quicksand';
+            font-size: 1.5rem;
+            &:disabled {
+                color: black;
+                cursor: not-allowed; 
+            }
+        }
+        span {
+            font-family: 'Quicksand';
+            font-size: 1.125em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            color: $defaultTextColor;
+        }
+      }
+    
+    &__custom-arrows button:hover {
+      color: $highlightedItemColor;
+      cursor: pointer;
+    }
+    
 }

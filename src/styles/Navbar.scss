@@ -24,10 +24,10 @@
     z-index: 2;
     height: 100%;
     backdrop-filter: blur(23px); 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1262px) {
         display: none;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1262px) {
         width: 50%;
     }
     @media screen and (max-width: 540px) { 
@@ -47,7 +47,7 @@
         width: 100%;
         font-family: "Century Gothic";
         font-weight: normal;
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1262px) {
             margin-top: 5.9375rem;
         }
         @media screen and (max-width: 540px) {
@@ -81,6 +81,14 @@
         padding: 0.625rem 0 0.625rem 0.9375rem; 
         font-size: 1em;
         letter-spacing: 0.05em;   
+        a{
+            text-decoration: none;
+            color: $defaultTextColor;
+            transition: opacity .3s ease;
+        }
+        a:hover{
+            opacity: 0.8;
+        }
     }
     
 }
@@ -108,7 +116,7 @@
     position: fixed;
     width: 100%;
     padding: 0.9375rem 7.78% 0.9375rem 3.26%;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1262px) {
         padding: 0.9375rem 4.5rem 0.9375rem 4.5rem;
     }
     @media screen and (max-width: 768px) {
@@ -131,7 +139,7 @@
     nav {
         display: flex;
         align-items: center;
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1262px) {
             display: none;
         }
     }
@@ -161,7 +169,7 @@
         & > :first-child{
             margin-right: 4.0625rem;
         }
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1262px) {
             & > :first-child{
                 margin-right: 2.5rem;
             }
@@ -177,7 +185,9 @@
     &__interact-button{
         display: flex;
         align-items: center;
-        & span{
+        & a{
+            text-decoration: none;
+            color: $defaultTextColor;
             margin-left: 0.375rem;
             margin-right: 0.5rem;
         }
@@ -191,7 +201,7 @@
 
     .hamburger-react{
         display: none;
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1262px) {
             display: block;
             margin-left: 2.5rem;
         }
@@ -219,7 +229,7 @@
         z-index: 2;
         color: $defaultTextColor; 
         transition: background-color 0.3s;
-        span{
+        a{
             padding: 0.5rem 1rem;
         }
     }

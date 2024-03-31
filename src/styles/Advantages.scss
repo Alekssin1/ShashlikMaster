@@ -26,6 +26,9 @@
             font-family: 'Century Gothic';
             font-weight: bold;
             letter-spacing: 0.15em;
+            @media screen and (max-width: 1024px) {
+                margin-left: 3.125rem;
+            }
             @media screen and (max-width: 650px) {
                 margin-left: 0;
                 font-size: 1.375em;

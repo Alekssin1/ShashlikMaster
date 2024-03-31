@@ -64,6 +64,7 @@
     &__main-picture-container {
         grid-column: span 4;
         align-self: center;
+        max-width: 23.625rem;
         img {
           max-width: 100%;
           height: auto;

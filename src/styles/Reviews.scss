@@ -1,28 +1,6 @@
 @import 'Colors';
 
-.slick-arrow{
-    width: 3.75rem;
-    height: 3.75rem; 
-    fill: $borderColor;
-}
-.slick-arrow.slick-disabled {
-    fill: $arrowControllerColor; 
-}
-.slick-next{
-    right: -2rem;
-}
-.slick-prev{
-    left: -2rem;
-}
 
-@media screen and (max-width: 540px) {
-    .slick-next{
-        right: -2rem;
-    }
-    .slick-prev{
-        left: -2rem;
-    }
-}
 
 .slick-slider{
     &:hover {
@@ -146,6 +124,9 @@
             padding: 1rem 4.5rem; 
         }
     }
+    .slick-slide .slick-active{
+        max-width: 200px;
+    }
     &__comment-content{
         display: flex;
         margin: 1.5625rem 0;
@@ -210,6 +191,54 @@
     }
     
     
-
+    .slick-arrow{
+        width: 3.75rem;
+        height: 3.75rem; 
+        fill: $borderColor;
+        @media screen and (max-width: 768px) {
+            width: 3rem;
+            height: 3rem; 
+        }
+    }
+    .slick-arrow.slick-disabled {
+        fill: $arrowControllerColor; 
+    }
+    .slick-next{
+        right: -4.5rem;
+    }
+    .slick-prev{
+        left: -4.5rem;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .slick-next{
+            right: -2rem;
+        }
+        .slick-prev{
+            left: -2rem;
+        }
+    }
+    .slick-slider .slick-track, .slick-slider .slick-list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .slick-initialized .slick-slide{
+        margin-left: 1.0938rem;
+        margin-right: 1.0938rem;
+        @media screen and (max-width: 1200px) {
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+        }
+        @media screen and (max-width: 1024px) {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+    // .slick-slider .slick-list{
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+    // }
     
 }

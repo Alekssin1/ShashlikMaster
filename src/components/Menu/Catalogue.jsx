@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "../../styles/Menu/Catalogue.scss";
+import "../../styles/Menu/CatalogueCard.scss"
 import "../../styles/Pagination.scss"
 import { ReactComponent as Shashlik } from '../../assets/images/Menu/shashlik.svg';
 import { ReactComponent as LiuliaKebab } from '../../assets/images/Menu/liulia-kebab.svg';
@@ -29,37 +30,37 @@ const items = [
 
 const catalogueItemsPages = [
   [
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
-    { image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 1, category: "shaslik", image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 2, category: "shaslik", image: VegetablesImage, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 3, category: "shaslik", image: SetImage, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 4, category: "shaslik", image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 5, category: "shaslik", image: VegetablesImage, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 6, category: "shaslik", image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 7, category: "shaslik", image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 8, category: "shaslik", image: SetImage, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
+    { id: 9, category: "shaslik", image: Design, title: 'Шашлик з телятини 100г', weight: '100 грн/100 г', price: 100 },
   ],
   [
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
-    { image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 1, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 2, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 3, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 4, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 5, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 6, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 7, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 8, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
+    { id: 9, category: "vegetables", image: VegetablesImage, title: 'Овочевий сет 1600г', weight: '650 грн/1600 г', price: 650 },
   ],
   [
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
-    { image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 1, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 2, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 3, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 4, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 5, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 6, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 7, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 8, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
+    { id: 9, category: "sets", image: SetImage, title: 'Сет на 10-12 персон 4400г', weight: '2400 грн/4400 г', price: 2400 },
   ]
 ]
 
@@ -68,6 +69,7 @@ function Catalogue() {
   const [highlightedItem, setHighlightedItem] = React.useState(null);
   const [catalogueItems, setCatalogueItems] = useState([]);
   const catalogueSectionRef = useRef(null);
+  const [scrollingEnabled, setScrollingEnabled] = useState(false);
 
   useEffect(() => {
     setCatalogueItems(catalogueItemsPages[currentPage]);
@@ -78,9 +80,54 @@ function Catalogue() {
     setCurrentPage(pageNumber); 
   };
 
+  // const handleMenuScroll = (e) => {
+  //   const scrollDistance = e.deltaY;
+  //   const menu = document.querySelector('.menu__list');
+  //   menu.scrollLeft += scrollDistance;
+  // };
+  const handleMenuMouseEnter = () => {
+    if (window.innerWidth <= 768) {
+      setScrollingEnabled(true);
+      disableBodyScroll();
+    }
+  };
+  
+  const handleMenuMouseLeave = () => {
+    if (window.innerWidth <= 768) {
+      setScrollingEnabled(false);
+      enableBodyScroll();
+    }
+  };
+  
+  const disableBodyScroll = () => {
+    document.body.style.overflow = 'hidden';
+  };
+  
+  const enableBodyScroll = () => {
+    document.body.style.overflow = '';
+  };
+  
+  const handleMenuScroll = (e) => {
+    if (scrollingEnabled) {
+      const scrollDistance = e.deltaY;
+      const menu = document.querySelector('.menu__list');
+      const scrollDirection = scrollDistance > 0 ? 'right' : 'left';
+      
+      if (scrollDirection === 'right') {
+        menu.scrollLeft += Math.abs(scrollDistance);
+      } else {
+        menu.scrollLeft -= Math.abs(scrollDistance);
+      }
+    }
+  };
+
+
   return (
     <div className='catalogue'>
-      <aside className="catalogue__menu">
+      <aside className="catalogue__menu" 
+      onMouseEnter={handleMenuMouseEnter}
+      onMouseLeave={handleMenuMouseLeave}
+      onWheel={handleMenuScroll}>
       <ul className="menu__list">
           {items.map((item, index) => (
             <li
@@ -109,6 +156,7 @@ function Catalogue() {
           ))}
         </ul>
       </aside>
+      
 
       <div className="catalogue__section" ref={catalogueSectionRef}>
         <h1>Рекомендовані</h1>
@@ -116,9 +164,12 @@ function Catalogue() {
           {catalogueItemsPages[currentPage].map((item, index) => (
             <CatalogueCard
               key={index}
+              id = {item.id}
+              category = {item.category}
               title={item.title}
               image={item.image}
               price={item.price}
+              weight={item.weight}
             />
           ))}
         </div>
