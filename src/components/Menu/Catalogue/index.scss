@@ -63,7 +63,7 @@
         .menu__item {
             height: 2.5rem;
             transition: color 0.3s;
-        
+            
             &:hover {
                 color: $highlightedItemColor; 
                 cursor: pointer; 
