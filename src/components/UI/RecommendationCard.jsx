@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
-function RecommendationCard({ title, weight, price, image }) {
+function RecommendationCard({ id, title, weight, price, image }) {
     return (
       <div className="recommendation__product-card">
         <div className="recommendation__product-info">
-            <a href={title}>{title}</a>
+            <Link to={`/ShashlikMaster/menu/shashlik/${id}`}>{title}</Link>
             <span>{weight}</span>
         </div>
         <div className="recommendation__product-card-image-container">
-          <a href={title}><img src={image} alt={title}/></a>
+          <Link to={`/ShashlikMaster/menu/shashlik/${id}`}><img src={image} alt={title}/></Link>
         </div>
         <div className="recommendation__buy-button">
           {price}

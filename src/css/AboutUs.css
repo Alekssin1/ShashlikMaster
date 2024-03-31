@@ -46,9 +46,10 @@
         margin-bottom: 0; } }
   .about-us__main-picture-container {
     grid-column: span 4;
-    align-self: center; }
+    align-self: center;
+    }
     .about-us__main-picture-container img {
-      max-width: 100%;
+      max-width: 23.625rem;
       height: auto; }
     @media screen and (max-width: 1024px) {
       .about-us__main-picture-container {
