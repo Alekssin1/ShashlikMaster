@@ -9,23 +9,30 @@
     }
 }
 
-.css-bvyohc-MuiTypography-root-MuiLink-root {
+a.MuiTypography-root {
     color: $breadcrumbTextColor!important;
     font-size: 0.75rem!important;
     letter-spacing: 0.1em!important;
     font-weight: 500!important;
 }
 
-.css-bvyohc-MuiTypography-root-MuiLink-root:hover {
+a.MuiTypography-root:hover {
     color: $highlightedItemColor!important;
     text-decoration: underline;
 }
 
-.css-1wuw8dw-MuiBreadcrumbs-separator{
+li.MuiBreadcrumbs-separator{
+    line-height: initial;
     color: $breadcrumbDashesColor!important;
 }
 
-.css-4pdmu4-MuiBreadcrumbs-ol{
+li.MuiBreadcrumbs-li{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+ol.MuiBreadcrumbs-ol{
     margin-left: 7rem!important;
     margin-top: 0.9375rem!important;
     margin-bottom: 0.6875rem!important;
@@ -44,14 +51,13 @@
     
 }
 
-.css-1gqyz35-MuiTypography-root{
-    justify-content: bottom!important;
+p.MuiTypography-root{
+    text-align:end;
     color: $highlightedItemColor!important;
     font-family: 'Inter'!important;
     font-size: 0.75rem!important;
     letter-spacing: 0.1em!important;
     font-weight: 500!important;
-    line-height: 1!important;
     text-decoration: underline;
 }
 
