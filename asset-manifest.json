@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ShashlikMaster/static/css/main.4b0ad8dd.css",
-    "main.js": "/ShashlikMaster/static/js/main.bd12abc8.js",
+    "main.css": "/ShashlikMaster/static/css/main.52e7012b.css",
+    "main.js": "/ShashlikMaster/static/js/main.a7a6e5d9.js",
     "static/media/smaller-logo.svg": "/ShashlikMaster/static/media/smaller-logo.d47edd909362b395940b76730431a0bd.svg",
     "static/media/Logo.svg": "/ShashlikMaster/static/media/Logo.294e5e5c042dd8d126bfaefad3ffc0aa.svg",
     "static/media/brown-wooden-textured-flooring-background.webp": "/ShashlikMaster/static/media/brown-wooden-textured-flooring-background.9848446a2fa515d246f4.webp",
@@ -54,11 +54,11 @@
     "static/media/forward.svg": "/ShashlikMaster/static/media/forward.5078b81d4d63d90bebfd651368d007b4.svg",
     "static/media/back.svg": "/ShashlikMaster/static/media/back.c66278e59b89c3b106763f565ad45a27.svg",
     "static/media/collapse-button.svg": "/ShashlikMaster/static/media/collapse-button.135df4ae0bf9cc9549852892ce0d70f0.svg",
-    "main.4b0ad8dd.css.map": "/ShashlikMaster/static/css/main.4b0ad8dd.css.map",
-    "main.bd12abc8.js.map": "/ShashlikMaster/static/js/main.bd12abc8.js.map"
+    "main.52e7012b.css.map": "/ShashlikMaster/static/css/main.52e7012b.css.map",
+    "main.a7a6e5d9.js.map": "/ShashlikMaster/static/js/main.a7a6e5d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b0ad8dd.css",
-    "static/js/main.bd12abc8.js"
+    "static/css/main.52e7012b.css",
+    "static/js/main.a7a6e5d9.js"
   ]
 }
